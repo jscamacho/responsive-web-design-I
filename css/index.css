@@ -194,7 +194,13 @@ footer {
 
 @media(max-width:800px){
     .container{
-        width: 800px;
+        width: 750px;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 500px;
     }
 }
 
@@ -223,12 +229,40 @@ footer {
     width: 765px
   }
 }
-   
+
+@media(max-width:500px){
+    header nav { 
+    flex-flow: column;
+    width: 500px;
+  }
+}  
+
+@media(max-width:500px){
+    header nav a{
+        width: 100%; 
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid lightgrey;
+  }
+} 
+
 @media(max-width:800px){
     .cta {
         display:flex;
         justify-content: center;
         margin-top: -38px;
+        margin-bottom: -39px;
+    }
+}
+
+@media(max-width:500px){
+    .cta {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -38px;
+        margin-bottom: -39px;
     }
 }
 
@@ -238,19 +272,73 @@ footer {
     }
 }
 
-
 @media(max-width:800px){
-    .main-content .top-content {
-        display:flex;
+    .main-content {
         justify-content: center;
+        margin: 0, auto;
+        width: 750px;
+    }
+}
+
+@media(max-width:500px){
+    .main-content .top-content{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 20px;
+        margin: 0, auto;
+        width: 500px;
     }
 }
 
 @media(max-width:800px){
     .middle-img {
         display:flex;
-        margin: 0, auto;
         justify-content: center;
         width: 765px;
+    }
+}
+
+@media(max-width:500px){
+    .middle-img {
+        display:flex;
+        justify-content: center;
+        width: 500px;
+    }
+}
+
+@media(max-width:800px){
+    .bottom-content {
+        width: 700px;
+        display:flex;
+        justify-content: center;       
+    }
+}
+
+@media(max-width:500px){
+    .bottom-content {
+        width: 500px;
+        display:flex;
+        justify-content: center; 
+        flex-direction: column;      
+    }
+}
+
+@media(max-width:800px){
+    .bottom-content .text-content{
+        display:flex;
+        justify-content: center;
+        width: 10px;
+        margin: 0px, auto;   
+    }
+}
+
+@media(max-width:500px){
+    .bottom-content .text-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        margin: 0px, auto;   
     }
 }
